@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.0.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cloropleth Map of US Education By County</title>
+</head>
+<body>
+    <h1 id="title">Cloropleth Map of US Education By County</h1>
+    <h3 id="description">The percentage of residents 25+ with bachelor's degrees or higher</h3>
+
+    <div id="tooltip"></div>
+
+    <div id="container">
+
+        <svg id="board">
+
+        </svg>
+        <br>
+
+            <div id="onRight">
+
+
+                <svg id="legend">
+                    <g>
+                        <rect x='10' y='20' width='20' height='20' fill="saddlebrown"></rect>
+                        <text x="10" y="60" fill="seashell">Under 5%</text>
+            
+                        <rect x='40' y='20' width='20' height='20' fill="chocolate"></rect>
+                        <text x="10" y="80" fill="seashell">Under 10%</text>
+                        
+                        <rect x='70' y='20' width='20' height='20' fill="sandybrown"></rect>
+                        <text x="10" y="100" fill="seashell">Under 15%</text>
+                    
+                        <rect x='100' y='20' width='20' height='20' fill="peachpuff"></rect>
+                        <text x="10" y="120" fill="seashell">Under 20%</text>
+                        
+                        <rect x='130' y='20' width='20' height='20' fill="seashell"></rect>
+                        <text x="10" y="140" fill="seashell">Over 20%</text>
+            
+                    </g>
+
+                    
+            
+                </svg>
+            </div>
+
+    </div>
+    
+</body>
+<script defer src="script.js"></script>
+<script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

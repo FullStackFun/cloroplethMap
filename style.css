@@ -1,0 +1,48 @@
+html, body {
+    min-height: 100%;
+}
+
+g {
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: peachpuff;
+}
+
+svg {
+    background-color: sienna;
+}
+
+#board {
+    min-width: 1005px;
+    min-height: 603px;
+}
+
+#tooltip {
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    font-size: 25px;
+}
+
+.county:hover {
+    fill: rgb(85, 47, 34);
+}
+
+container {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+onRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 51px;
+}
